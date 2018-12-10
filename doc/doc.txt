@@ -5,3 +5,8 @@ view-source:
 permet d'afficher le code source dans un navigateur
 ou CTRL-U
 
+code 304 html = page recharger via le cache
+
+si un site est en https alors tous les liens à l'intérieur du code source doivent être en https sinon utilisez le préfixe //monsite.com/jquery.js
+
+
