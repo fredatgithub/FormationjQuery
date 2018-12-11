@@ -1,5 +1,17 @@
+function retourCharriot(){
+    return '<br />';
+}
+
+retourChariot2 = function () {
+    return '<br />';
+}
+var retourChariot3 = function () {
+    return '<br />';
+};
+
 $(document).ready(function() {
     
+
     var varNumber = 9;
     var varText = 'hello world';
 
@@ -17,13 +29,46 @@ $(document).ready(function() {
         let titi = 33; // visible dans le contexte local, sera supprimé en dehors de if 
     }
 
-    console.log(varNumber);
-    console.log($.type(varNumber));
+    //console.log(varNumber);
+    //console.log($.type(varNumber));
 
-    console.log(varText);
-    console.log($.type(varText));
+    //console.log(varText);
+    //console.log($.type(varText));
 
-    console.log(toto);
+    //console.log(toto);
     //console.log(titi); // erreur variable non définie dans le contexte
+    let developpeur = { // objet litéral
+        prenom: 'freddy', 
+        //languageTexte: 'jQuery mais aussi le C#',
+        afficher: function(message){
+            alert(message);
+        },
+        afficherLong: function(){
+            alert( this.prenom + ' adore le language ' + this.language);
+        },
+        languages:{
+            1: 'Javascript',
+            2: 'PHP',
+            3: 'TypeScript'
+        }
+    };
+
+    $('#content2').append(retourCharriot());
+    $('#content2').append(retourChariot3);
+
+    $.each(developpeur, function (etiquette, valeur) {
+        if($.type(valeur) === 'object'){
+            $('#content2').append(etiquette +  ' : <br /><ul>');
+            $.each(valeur, function (etq, val) {
+                $('#content2 ul').append('<li> ' + val  + '</li>');
+
+              });
+        } 
+        else if($.type(valeur) !== 'function' && valeur !== null){
+         $('#content2').append(etiquette + ' : ' + valeur + retourCharriot());
+        }
+    });
+
+    console.log(developpeur);
 });
 

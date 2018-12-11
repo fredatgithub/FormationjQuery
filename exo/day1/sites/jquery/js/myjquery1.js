@@ -23,8 +23,31 @@ $(document).ready(function() {
     console.log($('a.link').text());
     console.log($('#content').text()); // récupère que le texte
     console.log($('#content').html()); // récupère le texte et les balises html
+
+    // day2
+    
+    let developpeur = { // objet litéral
+        prenom: 'freddy', 
+        language: 'jQuery mais aussi le C#',
+        afficher: function(message){
+            alert(message);
+        },
+        afficherLong: function(){
+            return this.prenom + ' adore le language ' + this.language;
+        }
+    };
+
+    console.log('la variable developpeur est de type ' + $.type(developpeur));
+    console.log(developpeur);
+    var phrase = developpeur.prenom + ' adore le ' + developpeur.language;
+    console.log(phrase);
+    $('#content').append('<h2>&copy;&nbsp;' + phrase + '&nbsp </h2>');
+    //developpeur.afficher('hello méthode afficher dans l objet developpeur');
+    $('#content').append(developpeur.afficherLong);
+
+    
 });
 
 
-console.log($);
-console.log("test pour debug");
+//console.log($);
+//console.log("test pour debug");
