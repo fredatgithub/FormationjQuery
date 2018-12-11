@@ -24,4 +24,20 @@ $(document).ready(function() {
     languages.unshift('JS');
     console.log(languages);
 
+    //insérer un élément à un endroit donné
+    languages.splice(3, 0, 'VB');
+    console.log(languages);
+
+    languages.splice(3, 0, 'Lisp', 'Smaltalk');
+    console.log(languages);
+
+    languages.push({compilateur: 'Gcc'});
+    console.log(languages);
+
+    let myJson = JSON.stringify(languages);
+    console.log(myJson);
+
+    let reverse = JSON.parse(myJson);
+    console.log(myJson);
+
 });
