@@ -50,6 +50,11 @@ $(document).ready(function() {
             1: 'Javascript',
             2: 'PHP',
             3: 'TypeScript'
+        },
+        ide:{
+            1: 'PHP Storm',
+            2: 'Visual Studio Code',
+            3: 'Eclipse'
         }
     };
 
