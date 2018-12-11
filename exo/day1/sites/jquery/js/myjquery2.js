@@ -77,5 +77,18 @@ $(document).ready(function() {
     });
 
     console.log(developpeur.languages);
-});
 
+    var myparams = $.param(developpeur);
+    console.log(myparams);
+
+    var myUrl = 'http://www.monserveur.fr/index.php?' + myparams;
+    console.log(myUrl);
+
+    let params = decodeURIComponent(myparams);
+    console.log(params);
+    console.log($.type(params));
+    //redirection en javascript
+    document.location.href=myUrl;
+    
+
+});

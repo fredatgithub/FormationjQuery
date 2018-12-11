@@ -9,4 +9,6 @@ code 304 html = page recharger via le cache
 
 si un site est en https alors tous les liens à l'intérieur du code source doivent être en https sinon utilisez le préfixe //monsite.com/jquery.js
 
+aujourd'hui les ancres se construisent avec des ID pour tous les tags et pas uniquement les balises <a> comme dans le html4
+<p id="paraf1">mon paragraphe 1 </p>
 
