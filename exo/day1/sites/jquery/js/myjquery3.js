@@ -2,11 +2,13 @@ function retourCharriot(){
     return '<br />';
 }
 
-$(document).ready(function() {
+var j = jQuery.noConflict();
+
+j(document).ready(function() {
     let languages = ['javascript', 'PHP', 'ASP', 'Python'];
 
     console.log(typeof(languages)); // déprécié ne pas utilisé
-    console.log($.type(languages)); // à utiliser
+    console.log(j.type(languages)); // à utiliser
     console.log('nombre de langages : ' + languages.length);
     // ajouter des éléments à la fin du tableau
     languages.push('C#');
