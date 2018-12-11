@@ -55,7 +55,9 @@ $(document).ready(function() {
             1: 'PHP Storm',
             2: 'Visual Studio Code',
             3: 'Eclipse'
-        }
+        },
+        OS: ['Windows', 'MacOS', 'Linux'],
+        nombrePremiers: [2, 3, 5, 7, 11]
     };
 
     $('#content2').append(retourCharriot());
@@ -63,9 +65,9 @@ $(document).ready(function() {
 
     $.each(developpeur, function (etiquette, valeur) {
         if($.type(valeur) === 'object'){
-            $('#content2').append(etiquette +  ' : <br /><ul>');
+            $('#content2').append(etiquette +  ' : <br /><ul class="' + etiquette + '">');
             $.each(valeur, function (etq, val) {
-                $('#content2 ul').append('<li> ' + val  + '</li>');
+                $('#content2 ul.' + etiquette).append('<li> ' + val  + '</li>');
 
               });
         } 
@@ -74,6 +76,6 @@ $(document).ready(function() {
         }
     });
 
-    console.log(developpeur);
+    console.log(developpeur.languages);
 });
 
