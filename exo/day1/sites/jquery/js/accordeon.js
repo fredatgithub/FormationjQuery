@@ -13,15 +13,17 @@ j('#accordeon p').on('click', function(event){
    let $s = j(this); // $ pour dire que c'est un objet jQuery
    let s = j(this); // cela marche mais on ne voit pas que c'est un objet jQuery
    const time = 300; // constante locale
+   j('#accordeon p i.fa-chevron-down').removeClass('fa-rotate-90');
     if($s.hasClass('opened')){
         $s.next().slideUp(time);
-        $s.children('i').toggleClass('fas fa-chevron-down');
-        console.log($s.children('i'));
+        $s.find('i.fa-chevron-right').removeClass('fa-rotate-90');
+        //console.log($s.children('i'));
     } else{
         $s.next().slideDown(time).siblings('.soufflet').slideUp(time);
-        $s.siblings('p').removeClass('opened');
-        $s.children('i','fas fa-chevron-down').toggleClass('fas fa-chevron-right');
-        console.log($s.children('i','fas fa-chevron-down'));
+        $s.siblings('p').removeClass('opened').find('i.fa-chevron-right').removeClass('fa-rotate-90');
+        //$s.find('i','fa-chevron-down').toggleClass('fa-chevron-right');
+        $s.find('i.fa-chevron-right').addClass('fa-rotate-90');
+        //console.log($s.children('i','fas fa-chevron-down'));
     }
 
     $s.toggleClass('opened');
