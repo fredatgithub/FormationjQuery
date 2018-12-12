@@ -15,8 +15,13 @@ j('#accordeon p').on('click', function(event){
    const time = 300; // constante locale
     if($s.hasClass('opened')){
         $s.next().slideUp(time);
+        $s.children('i').toggleClass('fas fa-chevron-down');
+        console.log($s.children('i'));
     } else{
-        $s.next().slideDown(time);
+        $s.next().slideDown(time).siblings('.soufflet').slideUp(time);
+        $s.siblings('p').removeClass('opened');
+        $s.children('i','fas fa-chevron-down').toggleClass('fas fa-chevron-right');
+        console.log($s.children('i','fas fa-chevron-down'));
     }
 
     $s.toggleClass('opened');

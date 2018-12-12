@@ -2,8 +2,22 @@
     padding: 15px;
     background-color: chartreuse; 
     color: #941f66;
+    border-radius: 9px;
+    text-align: center;
+    font-style: italic;
 }
 
 #accordeon p:hover{
     cursor: pointer;
+}
+
+#accordeon .soufflet {
+    padding-left: 15px;
+    padding-right: 15px;
+    /* text-align: center; */
+}
+
+#accordeon p i {
+    margin-right: 10px;
+    /* color: chartreuse;  */
 }
