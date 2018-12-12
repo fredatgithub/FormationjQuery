@@ -27,7 +27,7 @@ $(document).ready(function() {
     // day2
     
     let developpeur = { // objet litéral
-        prenom: 'freddy', 
+        prenom: 'fred', 
         language: 'jQuery mais aussi le C#',
         afficher: function(message){
             alert(message);

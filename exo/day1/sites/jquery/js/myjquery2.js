@@ -38,7 +38,7 @@ $(document).ready(function() {
     //console.log(toto);
     //console.log(titi); // erreur variable non définie dans le contexte
     let developpeur = { // objet litéral
-        prenom: 'freddy', 
+        prenom: 'fred', 
         //languageTexte: 'jQuery mais aussi le C#',
         afficher: function(message){
             alert(message);
