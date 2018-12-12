@@ -6,7 +6,8 @@ j('.soufflet').hide();
 j('#accordeon p').on('click', function(event){
     //console.log('click ok');
     //console.log(event);
-    j(this).next().show();
+    //j(this).next().show();
+    j(this).next().slideDown(500);
     });
 
     
