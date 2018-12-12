@@ -45,5 +45,12 @@ $('a[title$="blog"]') // qui finit par "blog"
 $('a[href*="zip"]') // qui contient "zip"
 $('a[rel][href][title$="blog"]') // tous les a qui ont un tribut rel, href et dont le titre commence par "blog"
 
+<p class="class1">test</p>
+j('p').toggleClass('class1');
+<p class="">test</p>
+
+<p class="class1">test</p>
+j('p').toggleClass('class1 class2');
+<p class="class2">test</p>
 
 

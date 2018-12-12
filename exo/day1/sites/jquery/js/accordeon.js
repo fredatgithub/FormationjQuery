@@ -14,11 +14,14 @@ j('#accordeon p').on('click', function(event){
    let s = j(this); // cela marche mais on ne voit pas que c'est un objet jQuery
    const time = 300; // constante locale
    j('#accordeon p i.fa-chevron-down').removeClass('fa-rotate-90');
+
+   // Fermeture du soufflet
     if($s.hasClass('opened')){
         $s.next().slideUp(time);
         $s.find('i.fa-chevron-right').removeClass('fa-rotate-90');
         //console.log($s.children('i'));
     } else{
+        // Ouverture du soufflet et fermeture des autres
         $s.next().slideDown(time).siblings('.soufflet').slideUp(time);
         $s.siblings('p').removeClass('opened').find('i.fa-chevron-right').removeClass('fa-rotate-90');
         //$s.find('i','fa-chevron-down').toggleClass('fa-chevron-right');

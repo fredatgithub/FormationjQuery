@@ -2,7 +2,7 @@
     padding: 15px;
     background-color: chartreuse; 
     color: #941f66;
-    border-radius: 9px;
+    border-radius: 2px;
     text-align: center;
     font-style: italic;
 }
@@ -12,12 +12,23 @@
 }
 
 #accordeon .soufflet {
-    padding-left: 15px;
+    padding: 15px;
     padding-right: 15px;
+    margin-top: -18px;
     /* text-align: center; */
+    border: 1px solid chartreuse;
+    border-radius: 2px;
+    font-family: 'Dancing Script', cursive;
+    border-top: none !important;
 }
 
 #accordeon p i {
     margin-right: 10px;
     /* color: chartreuse;  */
+}
+
+#accordeon span{
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.4rem;
+    /* font-family: 'Dancing Script', cursive; */
 }
