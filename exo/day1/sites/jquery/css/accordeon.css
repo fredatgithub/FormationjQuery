@@ -1,13 +1,13 @@
 #accordeon p {
     padding: 15px;
-    background-color: chartreuse; 
+    background-color: chartreuse;
     color: #941f66;
     border-radius: 2px;
     text-align: center;
     font-style: italic;
 }
 
-#accordeon p:hover{
+#accordeon p:hover {
     cursor: pointer;
 }
 
@@ -27,20 +27,20 @@
     /* color: chartreuse;  */
 }
 
-#accordeon span{
+#accordeon span {
     font-family: 'Comfortaa', cursive;
     font-size: 1.4rem;
     /* font-family: 'Dancing Script', cursive; */
 }
 
-.jumbotron{
+.jumbotron {
     background-color: #ffcc33;
 }
 
-.jumbotron h1{
+.jumbotron h1 {
     color: #fff;
 }
 
-[class*="col"]{
+[class*="col"] {
     border: 1px dotted #474444;
 }
