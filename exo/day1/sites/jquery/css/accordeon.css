@@ -1,0 +1,9 @@
+#accordeon p {
+    padding: 15px;
+    background-color: chartreuse; 
+    color: #941f66;
+}
+
+#accordeon p:hover{
+    cursor: pointer;
+}
