@@ -12,3 +12,38 @@ si un site est en https alors tous les liens à l'intérieur du code source doiv
 aujourd'hui les ancres se construisent avec des ID pour tous les tags et pas uniquement les balises <a> comme dans le html4
 <p id="paraf1">mon paragraphe 1 </p>
 
+http://codylindley.com/jqueryselectors/
+
+$('div code')
+je veux tous les enfants directs ou indirect de div qui ont une balise code
+$('div > code')
+je veux tous les enfants directs de div qui ont une balise code directement 
+$('strong + em') + = sélecteur d'adjacence direct
+je veux tous les frères de strong qui ont une balise em direct
+$('strong ~ em') 
+je veux tous les frères de strong qui ont une balise em indirect
+
+$('div code')
+$('li > ul')
+$('strong + em')
+$('strong ~ em') 
+
+en css, on peut masquer ou rendre visible
+
+visibility: show; // le dom ne bouge pas, l'élément est masqué mais l'emplacement reste vide
+visibility: hidden;
+
+display: none; // le dom change car l'élément est masqué et l'emplacement est enlevé
+display: block;
+
+
+$('li[class]') // toutes les balises li qui contiennent un attribut class
+$('a[rel="self"]') // tous les a qui ont un attribut "self"
+$('a[rel!="nofollow"]') // qui ne contient pas "nofollow"
+$('[class^="my"]') // commence par "my"
+$('a[title$="blog"]') // qui finit par "blog"
+$('a[href*="zip"]') // qui contient "zip"
+$('a[rel][href][title$="blog"]') // tous les a qui ont un tribut rel, href et dont le titre commence par "blog"
+
+
+
