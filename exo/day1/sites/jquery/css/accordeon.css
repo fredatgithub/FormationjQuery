@@ -32,3 +32,15 @@
     font-size: 1.4rem;
     /* font-family: 'Dancing Script', cursive; */
 }
+
+.jumbotron{
+    background-color: #ffcc33;
+}
+
+.jumbotron h1{
+    color: #fff;
+}
+
+[class*="col"]{
+    border: 1px dotted #474444;
+}
