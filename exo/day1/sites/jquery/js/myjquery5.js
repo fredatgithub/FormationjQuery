@@ -38,8 +38,41 @@ j(document).ready(function () {
         });
     });
 
+    // vidage des données de la fenetre
     j('#myModal').on('hide.bs.modal', function(){
         j('#mymodal .modal-body').empty();
         j('#myModalTitle').empty();
+    });
+
+    j('#launchPHP').on('click', function () {
+        let myObj = {prenom: 'fred', nom: 'smith'};
+        let modalTitle = j(this).data('title');;
+        j.ajax({
+            type: "POST",
+            url: 'php/page.php',
+            data: myObj,
+            dataType: 'json'
+            //    success: function (response) {
+
+            //    }
+        }).fail(function (jqXHR, textStatus, errorThrown) {
+            console.log(jqXHR);
+            console.log(textStatus);
+            console.log(errorThrown);
+            console.log(jqXHR.status);
+        }).done(function (data, textStatus, jqXHR) {
+            console.log(data);
+            console.log(textStatus);
+            console.log(jqXHR);
+
+            j('#myModalTitle').text(modalTitle);
+            let result = '';
+            j.each(data, function(key, val){
+                result += key + ' : ' + val + '<br />';
+            });
+
+            j('#mymodal .modal-body').html(result);
+            j('#mymodal').modal('show');
+        });
     });
 });
