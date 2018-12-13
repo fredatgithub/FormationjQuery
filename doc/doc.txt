@@ -54,3 +54,7 @@ j('p').toggleClass('class1 class2');
 <p class="class2">test</p>
 
 
+dans Firefox, taper
+about:about
+about:preferences
+about:cache
