@@ -12,11 +12,13 @@
             float: left;
             margin: 5px;
         }
-        .paragraphe{
+
+        .paragraphe {
             clear: left;
             margin: 0 10px;
         }
-        .row{
+
+        .row {
             margin-bottom: 20px;
             border: 1px dotted #CCC;
         }
@@ -34,32 +36,41 @@
                 <button class="btn btn-info btn-sm" id="add">La méthode add()</button>
             </div>
             <div class="col-10">
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-                    <div class="square"></div>
-    
-                    <p class="paragraphe">ceci est un paragraphe</p>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+
+                <p class="paragraphe">ceci est un paragraphe</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-4">
+                <button class="btn btn-warning btn-sm" id="ia">Les méthodes InsertBefore() et Before()</button>
+            </div>
+            <div class="col-8">
+                <ul id="liste">
+                    <li>Ligne 1</li>
+                    <li>Ligne 2</li>
+                </ul>
+
+                <a id="bing" href="https://www.bing.fr" target="_blank">Moteur de recherche bing</a>
             </div>
         </div>
 
         <div class="row">
                 <div class="col-4">
-                    <button class="btn btn-warning btn-sm" id="ia">Les méthodes InsertBefore() et Before()</button>
+                    <button class="btn btn-warning btn-sm" id="detach">Déplacer un élément</button>
                 </div>
-                <div class="col-8">
-                    <ul id="liste">
-                        <li>Ligne 1</li>
-                        <li>Ligne 2</li>
-                    </ul>    
-                </div>
+                <div class="col-8" id="cible"></div>
             </div>
 
     </main>
 
-    
-    
+
+
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/myjquery4.js"></script>
