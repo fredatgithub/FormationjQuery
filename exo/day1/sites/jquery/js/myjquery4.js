@@ -1,5 +1,12 @@
 var j= jQuery.noConflict();
+
+function unicID() {
+    return Math.round(new Date().getTime() + (Math.random() * 100) );
+}
+
 j(document).ready(function() {
+    console.log(unicID());
+    console.log(Math.random());
     let compteur = 3;
     j('#add').on('click', function(e) {
        //console.log('Click sur le bouton');
@@ -29,9 +36,18 @@ j(document).ready(function() {
     });
 
     j('#detach').on('click', function(){
-        let $liste = j('#liste').detach();
-        j('#cible').html($liste);
+        // let $liste = j('#liste').detach();
+        // j('#cible').html($liste);
+        // ou bien sur une seule ligne de code
+        j('#liste').detach().appenTo('#cible');
     });
+
+    j('#clone').on('click', function(){
+        j('#liste').clone().attr('id', 'liste-' + unicID()).appendTo('#cible2');
+        j(this).blur(); // remove focus
+    });
+
+
 
     // j('#content').on('click', function() {
     //     //console.log('Click sur la div content');
