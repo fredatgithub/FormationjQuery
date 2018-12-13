@@ -1,3 +1,4 @@
+"use strict";
 var j = jQuery.noConflict();
 
 function unicID() {
@@ -5,5 +6,8 @@ function unicID() {
 }
 
 j(document).ready(function () {
-   
+    j('.btnaction').on('click', function name(params) {
+        let boutonid2 = j(this).data('buttonid');
+        console.log(boutonid2);
     });
+});
