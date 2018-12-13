@@ -37,4 +37,9 @@ j(document).ready(function () {
             j('#mymodal').modal('show');
         });
     });
+
+    j('#myModal').on('hide.bs.modal', function(){
+        j('#mymodal .modal-body').empty();
+        j('#myModalTitle').empty();
+    });
 });
