@@ -6,6 +6,14 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .modal-backdrop {
+            background-color: bisque;
+        }
+        .modal-backdrop.show {
+            opacity: 1;
+        }
+    </style>
 </head>
 
 <body>
@@ -26,18 +34,68 @@
                 </button>
 
                 <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
+                <div class="modal fade" data-backdrop="static" data-keyboard="false" id="exampleModal" tabindex="-1"
+                    role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <button type="button" data-dismiss="modal" class="close" data-dismiss="modal"
+                                    aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
                             <div class="modal-body">
-                                ceci est le body du texte
+                                <a href="#" data-dismiss="modal">Fermer</a><br />
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac auctor nisi,
+                                vitae tincidunt nisi. Vivamus massa neque, molestie nec magna ac, bibendum ornare orci.
+                                Phasellus quam est, mattis at eros sed, cursus faucibus ex. Suspendisse vel ante massa.
+                                In quis blandit massa, quis cursus dui. Etiam gravida tincidunt lacus vel dictum.
+                                Praesent at viverra odio, sed ultrices augue. Etiam fringilla nisi massa, ut volutpat
+                                eros laoreet et. Sed venenatis, enim fermentum pulvinar ullamcorper, magna erat tempor
+                                nisi, at elementum ante mauris quis nulla. Duis felis nibh, semper id tellus ac,
+                                tristique consequat erat.
+
+                                Pellentesque aliquam, magna eu egestas vehicula, ante nisi aliquet dolor, ac accumsan
+                                mauris nisl aliquet lectus. Proin scelerisque nibh in elit auctor, vel faucibus purus
+                                efficitur. Proin felis lacus, hendrerit eget risus in, aliquet consectetur diam.
+                                Vestibulum lobortis augue ac ex scelerisque sollicitudin. Sed eleifend odio non urna
+                                eleifend eleifend. Vivamus condimentum libero vel augue varius interdum. Sed et diam
+                                lorem. Aliquam auctor libero non massa vestibulum, vel vehicula neque molestie. Aenean
+                                eget posuere ipsum. Fusce ex neque, tempus vel mi at, lacinia sollicitudin nisl.
+
+                                Nullam eu euismod sapien. Cras efficitur nisl ligula, in placerat neque tristique
+                                efficitur. Sed non justo vehicula, bibendum velit id, malesuada ante. Sed finibus velit
+                                nec lobortis lobortis. Cras posuere odio eu orci dignissim, placerat tempor nisl
+                                suscipit. Pellentesque viverra libero et sem tempor, ut congue nulla aliquet. Aenean
+                                est felis, cursus quis mollis vitae, sollicitudin in purus. Maecenas sagittis augue et
+                                eros volutpat tincidunt.
+
+                                Nunc feugiat sit amet magna in laoreet. Aliquam dui elit, fermentum non ipsum et,
+                                efficitur faucibus enim. Nullam cursus sapien risus, in dapibus justo accumsan non.
+                                Cras quis erat a risus posuere accumsan. In hac habitasse platea dictumst. Nullam in
+                                lectus eget metus maximus tincidunt quis sed risus. Maecenas pretium nisi in ex
+                                malesuada, id consequat sem consectetur. Fusce mauris diam, auctor sed pharetra quis,
+                                bibendum ut turpis. Nam porttitor ornare metus, ut auctor augue hendrerit at. Integer
+                                eget tellus quam. Integer eget ullamcorper libero. Vivamus nisi nisl, vulputate
+                                porttitor iaculis ac, mattis eget augue.
+
+                                Integer rhoncus blandit purus, ac egestas tortor vulputate non. Vestibulum sit amet
+                                libero eget risus aliquam ultricies. In at metus purus. Proin sed pulvinar velit. Duis
+                                scelerisque feugiat leo, non tristique turpis ornare non. Donec maximus, est ut tempus
+                                dignissim, diam leo interdum enim, sed tincidunt sem nunc eget nulla. Donec metus urna,
+                                vehicula ut tortor sed, venenatis rutrum ex. Pellentesque hendrerit malesuada odio id
+                                fringilla. Praesent dignissim sem ut finibus molestie. Nam commodo maximus scelerisque.
+                                Sed bibendum, odio sed vulputate sodales, nunc orci sagittis sapien, non ultricies
+                                lacus lorem vel ligula. Nulla vitae lorem vel ante sagittis euismod sit amet ac magna.
+                                Vestibulum dolor ipsum, egestas id libero et, ultricies dignissim lacus. Suspendisse et
+                                ultricies augue. Fusce sit amet mi lacinia, convallis nisl ut, vestibulum quam. Lorem
+                                ipsum dolor sit amet, consectetur adipiscing elit.
+
+                                Donec feugiat consectetur accumsan. Etiam venenatis nibh molestie congue vulputate.
+                                Pellentesque a nibh interdum, tincidunt eros finibus, porta purus. Donec sed interdum
+                                orci. Donec tincidunt non
+
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
