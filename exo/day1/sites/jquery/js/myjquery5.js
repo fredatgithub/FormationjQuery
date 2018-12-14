@@ -99,7 +99,7 @@ j(document).ready(function () {
     j('.btnaction2').on('click', user1, greet);
     j('.btnaction2').on('click', user2, greet);
 
-    j('#mySelect').select2({theme: "classic"});
+    j('#mySelect').select2({language: "fr"});
 });
 
 function greet(e) {
