@@ -101,7 +101,17 @@ j(document).ready(function () {
 
     j('#mySelect').select2({language: "fr"});
 
-    //j('.gallery img').css('width', '200px').css('margin', '10px');
+    //j('.gallery img').css('width', '200px').css('margin', '10px'); // mauvaise pratique
+
+    j('.gallery').magnificPopup({
+        delegate: 'a',
+        type:'image',
+        gallery:{
+            enabled: true,
+            navigateByImgClick: true
+        }
+    });
+    
 });
 
 function greet(e) {
