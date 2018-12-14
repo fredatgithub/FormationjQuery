@@ -90,9 +90,9 @@ j(document).ready(function () {
     let user1 = {
         nom: 'Santa Klause'
     };
-    
+
     let user2 = {
-        nom: 'Santa Casper'
+        nom: 'Casper'
     };
 
 
