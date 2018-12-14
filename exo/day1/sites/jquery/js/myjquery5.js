@@ -113,6 +113,10 @@ j(document).ready(function () {
     });
     
     new WOW().init();
+
+    j().UItoTop({scrollSpeed: 500, easingType: 'easeInElastic'});
+
+
 });
 
 function greet(e) {
