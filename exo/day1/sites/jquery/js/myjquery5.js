@@ -114,7 +114,7 @@ j(document).ready(function () {
     
     new WOW().init();
 
-    j().UItoTop({scrollSpeed: 500, easingType: 'easeInElastic'});
+    j().UItoTop({scrollSpeed: 4000, easingType: 'easeInQuint'});
 
 
 });
