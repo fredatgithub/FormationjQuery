@@ -100,6 +100,8 @@ j(document).ready(function () {
     j('.btnaction2').on('click', user2, greet);
 
     j('#mySelect').select2({language: "fr"});
+
+    //j('.gallery img').css('width', '200px').css('margin', '10px');
 });
 
 function greet(e) {
