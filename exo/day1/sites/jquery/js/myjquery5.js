@@ -77,13 +77,30 @@ j(document).ready(function () {
                 });
 
                 j('#mymodal .modal-body').html(result);
-                
+
             }, 1000);
         });
     });
 
-    j('#myModal').on('hide.bs.modal', function(){
+    j('#myModal').on('hide.bs.modal', function () {
         j('#myModalTitle').empty();
         j('#myModal .modal-body').html('<i class="fas fa-cog fa-spin fa-3x"></i>');
     });
+
+    let user1 = {
+        nom: 'Santa Klause'
+    };
+    
+    let user2 = {
+        nom: 'Santa Casper'
+    };
+
+
+    j('.btnaction2').on('click', user1, greet);
+    j('.btnaction2').on('click', user2, greet);
 });
+
+function greet(e) {
+    console.log(e);
+    alert('hello ' + e.data.nom);
+};
