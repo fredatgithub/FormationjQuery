@@ -112,6 +112,7 @@ j(document).ready(function () {
         }
     });
     
+    new WOW().init();
 });
 
 function greet(e) {
