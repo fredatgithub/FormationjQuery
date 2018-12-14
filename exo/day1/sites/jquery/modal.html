@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/select2.min.css" />
     <style>
         .modal-backdrop {
             background-color: bisque;
@@ -31,7 +31,24 @@
         <div class="row">
             <div class="col">
                 <button type="button" class="btn btn-secondary btnaction2">bouton 3</button>>
-
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col">
+                <form>
+                    <select id="mySelect" multiple>
+                        <option value="0">Veuillez faire un choix</option>
+                        <optgroup label="Europe">
+                            <option value="1">France</option>
+                            <option value="2">Italy</option>
+                        </optgroup>
+                        <optgroup label="Amérique">
+                            <option value="3">USA</option>
+                            <option value="4">Canada</option>
+                        </optgroup>
+                    </select>
+                </form>
             </div>
         </div>
         <br />
@@ -80,6 +97,9 @@
 
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/select2.full.min.js"></script>
+    <script src="js/i18n/fr.js"></script>
+
     <script src="js/myjquery5.js"></script>
 </body>
 
