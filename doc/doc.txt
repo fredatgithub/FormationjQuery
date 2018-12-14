@@ -58,3 +58,7 @@ dans Firefox, taper
 about:about
 about:preferences
 about:cache
+
+
+http://wpf-animation.googlecode.com/svn/trunk/src/WPF/Animation/PennerDoubleAnimation.cs
+
